@@ -6,7 +6,7 @@ const timerSecond = document.querySelector(".second")
 
 
 const countdown = () => {
-    const countDate = new Date("May 17, 2022 00:00:00").getTime();
+    const countDate = new Date("May 17, 2023 00:00:00").getTime();
 
     const now = new Date().getTime();
 
