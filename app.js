@@ -2,11 +2,13 @@ const timerDay = document.querySelector(".day")
 const timerHour = document.querySelector(".hour")
 const timerMinute = document.querySelector(".minute")
 const timerSecond = document.querySelector(".second")
-
+const dateTimeInput = document.querySelector("#dateTime")
 
 
 const countdown = () => {
-    const countDate = new Date("October 15, 2022 00:00:00").getTime();
+
+    const countDate = new Date(dateTimeInput.value)
+ 
 
     const now = new Date().getTime();
 
@@ -27,6 +29,9 @@ const countdown = () => {
     const textMinute = Math.floor((gap % hour) / minute);
 
     const textSecond = Math.floor((gap % minute) / second);
+
+
+
     
 timerDay.innerText = textDay
 timerHour.innerText = textHour
@@ -38,3 +43,4 @@ timerSecond.innerText = textSecond
 
 
 setInterval(countdown, 1000);
+
