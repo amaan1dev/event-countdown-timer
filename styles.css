@@ -1,8 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-}
 
+}
+body{
+    background-color: rgb(115, 140, 243);
+}
 
 h2{
     font-size: 5rem;
