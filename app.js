@@ -30,12 +30,6 @@ const countdown = () => {
 
     const textSecond = Math.floor((gap % minute) / second);
 
-    if(gap === "00:00:00")
-    {
-        console.log("success")
-    }
-
-
 
     
 timerDay.innerText = textDay
